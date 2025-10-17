@@ -128,7 +128,7 @@
           <h1 class="display-6 fw-semibold mb-0" style="color: #3e2a1d;">Konsultasikan Sofa Anda Sekarang</h1>
         </div>
         <p class="mb-4 text-secondary">Isi form berikut dan kami akan langsung merespons melalui WhatsApp.  
-          Dapatkan layanan <strong>service, reparasi, atau custom sofa</strong> dengan hasil terbaik dari Syafa Sofa.</p>
+          Dapatkan layanan <strong>service, reparasi, atau restorasi</strong> dengan hasil terbaik dari Syafa Sofa.</p>
 
         <form id="whatsappForm" class="bg-light rounded-3 p-4 shadow-sm">
           <div class="row g-3">
@@ -137,24 +137,15 @@
                 <input type="text" class="form-control border-0" id="nama" placeholder="Nama Anda" required>
                 <label for="nama">Nama Anda</label>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control border-0" id="telepon" placeholder="Nomor Telepon" required>
-                <label for="telepon">Nomor Telepon</label>
-              </div>
-            </div>
     <!-- Pilihan Jenis Layanan -->
     <div class="col-12">
       <div class="form-floating">
         <select class="form-select border-0" id="layanan" required>
           <option value="" selected>Pilih Jenis Layanan</option>
-          <option value="Ganti Kain Sofa">Ganti Kain Sofa</option>
-          <option value="Tambah Busa">Tambah Busa</option>
-          <option value="Service Rangka Sofa">Service Rangka Sofa</option>
-          <option value="Reparasi Total Sofa">Reparasi Total Sofa</option>
-          <option value="Plitur Furniture Kayu">Plitur Furniture Kayu</option>
-          <option value="Custom Sofa Baru">Custom Sofa Baru</option>
+          <option value="Restorasi Sofa">Restorasi Sofa</option>
+          <option value="Restorasi Kursi Jok">Restorasi Kursi Jok</option>
+          <option value="Restorasi Kursi Rotan">Restorasi Kursi Rotan</option>
+          <option value="Plitur Furniture">Plitur Furniture</option>
         </select>
         <label for="layanan">Jenis Layanan</label>
       </div>
@@ -185,11 +176,10 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e) {
     e.preventDefault();
     
     const nama = document.getElementById("nama").value;
-    const telepon = document.getElementById("telepon").value;
     const layanan = document.getElementById("layanan").value;
     const pesan = document.getElementById("pesan").value;
     
-    const text = `Halo Syafa Sofa! Saya ingin memesan layanan berikut:%0A🧍 Nama: ${nama}%0A📞 Telepon: ${telepon}%0A🛋️ Layanan: ${layanan}%0A💬 Pesan: ${pesan}`;
+    const text = `Halo Syafa Sofa! Saya ingin memesan layanan berikut:%0A🧍 Nama: ${nama}%0A🛋️ Layanan: ${layanan}%0A💬 Pesan: ${pesan}`;
     const waUrl = `https://wa.me/6281328901485?text=${text}`;
     
     window.open(waUrl, "_blank");
@@ -235,23 +225,27 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e) {
             <!-- Kolom 3: Navigasi -->
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Tautan Cepat</h4>
-                <a class="btn btn-link text-white-50" href="#about">Tentang Kami</a>
-                <a class="btn btn-link text-white-50" href="#services">Layanan Kami</a>
-                <a class="btn btn-link text-white-50" href="#appointment">Pesan Servis</a>
-                <a class="btn btn-link text-white-50" href="#testimoni">Testimoni</a>
-                <a class="btn btn-link text-white-50" href="#contact">Hubungi Kami</a>
+                <a class="btn btn-link text-white-50" href="about.html">Tentang Kami</a>
+                <a class="btn btn-link text-white-50" href="service.html">Layanan Kami</a>
+                <a class="btn btn-link text-white-50" href="feature.html">Keunggulan</a>
+                <a class="btn btn-link text-white-50" href="gallery.html">Galeri</a>
+                <a class="btn btn-link text-white-50" href="contact.html">Hubungi Kami</a>
             </div>
 
             <!-- Kolom 4: Jam Operasional -->
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Jam Operasional</h4>
-                <p class="text-white-50 mb-1">Senin – Sabtu</p>
-                <h6 class="text-white">08.00 – 17.00 WIB</h6>
-                <p class="text-white-50 mb-1">Minggu</p>
-                <h6 class="text-white">Tutup (by request)</h6>
-                <hr class="text-white-50">
-                <p class="text-white-50">Untuk konsultasi atau estimasi harga, silakan hubungi kami langsung via WhatsApp.</p>
+            <h4 class="text-light mb-4">
+                <i class="fa fa-clock text-warning me-2"></i>Jam Operasional
+            </h4>
+            <h5 class="text-white mb-1">Layanan Aktif 24 Jam</h5>
+            <h6 class="text-white-50 mb-3">(Siap melayani Anda setiap hari, tanpa libur)</h6>
+            <hr class="text-white-50">
+            <p class="text-white-50">
+                Hubungi kami kapan saja via WhatsApp untuk konsultasi, estimasi harga, 
+                atau pemesanan layanan. Kami selalu siap membantu Anda!
+            </p>
             </div>
+
         </div>
     </div>
 
@@ -271,7 +265,9 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e) {
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
 
     <!-- JavaScript Libraries -->
