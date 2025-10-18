@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jikkunesse.github.io/syafa-sofa/sitemap.xml
