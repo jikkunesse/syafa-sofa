@@ -2,18 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Syafa Sofa - Magic Your Furniture</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <meta name="title" content="Syafa Sofa Magelang - Jasa Service & Restorasi Sofa Profesional di Magelang">
-    <meta name="description" content="Syafa Sofa Magelang melayani service sofa, reparasi sofa, plitur furniture, dan restorasi sofa berkualitas di Magelang. Gratis konsultasi dan jemput antar.">
-    <meta name="keywords" content="sofa magelang, service sofa magelang, reparasi sofa magelang, restorasi sofa magelang, plitur furniture magelang, tukang sofa magelang, perbaikan sofa magelang">
-    <meta name="author" content="Syafa Sofa Magelang">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.syafasofa.my.id/">
-    <meta name="language" content="id">
+   <meta charset="utf-8">
+  <title>Hubungi Syafa Sofa Magelang | Layanan Service Sofa & Furniture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Syafa Sofa Magelang untuk layanan service sofa, plitur furniture, dan restorasi sofa profesional. Gratis konsultasi via WhatsApp!">
+  <meta name="keywords" content="kontak syafa sofa, service sofa magelang, reparasi sofa, plitur furniture magelang">
+  <meta name="author" content="Syafa Sofa Magelang">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.syafasofa.my.id/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hubungi Syafa Sofa Magelang">
+  <meta property="og:description" content="Gratis konsultasi & survei untuk perbaikan sofa di Magelang. Klik untuk menghubungi via WhatsApp.">
+  <meta property="og:image" content="https://www.syafasofa.my.id/img/og-contact.jpg">
+  <meta property="og:url" content="https://www.syafasofa.my.id/contact.html">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "headline": "Hubungi Syafa Sofa Magelang",
+    "description": "Hubungi Syafa Sofa Magelang untuk konsultasi dan pemesanan service sofa dan furniture.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Syafa Sofa Magelang",
+      "logo": { "@type": "ImageObject", "url": "https://www.syafasofa.my.id/img/logo%20syafa%20soffa.png" }
+    },
+    "url": "https://www.syafasofa.my.id/contact.html"
+  }
+  </script>
+
 
 
     <!-- Favicon -->
@@ -179,25 +199,116 @@
 <!-- Contact End -->
 
 
-<!-- WhatsApp Form Script -->
+<!-- ===== WhatsApp Order Section ===== -->
+<section class="py-5 bg-light" id="order">
+  <div class="container" data-aos="fade-up" data-aos-duration="1200">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="card shadow-lg border-0 rounded-4">
+          <div class="card-body p-4">
+            <h3 class="text-center mb-3 fw-bold text-primary">
+              <i class="bi bi-whatsapp"></i> Pesan Layanan Syafa Sofa
+            </h3>
+            <p class="text-muted text-center mb-4">
+              Isi formulir berikut untuk memesan layanan sofa & furniture kami secara cepat via WhatsApp.
+            </p>
+
+            <form id="whatsappForm">
+              <!-- Nama -->
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required>
+              </div>
+
+              <!-- Nomor Telepon -->
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-telephone-fill"></i></span>
+                <input type="tel" class="form-control" id="telepon" placeholder="Nomor WhatsApp / Telepon" required>
+              </div>
+
+              <!-- Alamat -->
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-geo-alt-fill"></i></span>
+                <textarea class="form-control" id="alamat" rows="2" placeholder="Alamat Lengkap" required></textarea>
+              </div>
+
+              <!-- Pilih Layanan -->
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-tools"></i></span>
+                <select class="form-select" id="layanan" required>
+                  <option value="" disabled selected>Pilih Layanan</option>
+                  <option value="Reparasi Sofa">Reparasi Sofa</option>
+                  <option value="Restorasi Sofa">Restorasi Sofa</option>
+                  <option value="Service Sofa">Service Sofa</option>
+                  <option value="Plitur Furniture">Plitur Furniture</option>
+                </select>
+              </div>
+
+              <!-- Pesan Tambahan -->
+              <div class="mb-3 input-group">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-chat-left-text-fill"></i></span>
+                <textarea class="form-control" id="pesan" rows="3" placeholder="Pesan tambahan (opsional)"></textarea>
+              </div>
+
+              <!-- Tombol -->
+              <button type="submit" class="btn btn-success w-100 py-2 fw-semibold shadow-sm hover-scale">
+                <i class="bi bi-send-fill"></i> Kirim ke WhatsApp
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WhatsApp Script ===== -->
 <script>
 document.getElementById("whatsappForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    const nama = document.getElementById("nama").value;
-    const layanan = document.getElementById("layanan").value;
-    const pesan = document.getElementById("pesan").value;
-    
-    const text = `Halo Syafa Sofa! Saya ingin memesan layanan berikut:%0A🧍 Nama: ${nama}%0A🛋️ Layanan: ${layanan}%0A💬 Pesan: ${pesan}`;
-    const waUrl = `https://wa.me/6281328901485?text=${text}`;
-    
-    window.open(waUrl, "_blank");
+  e.preventDefault();
+  
+  const nama = document.getElementById("nama").value;
+  const telepon = document.getElementById("telepon").value;
+  const alamat = document.getElementById("alamat").value;
+  const layanan = document.getElementById("layanan").value;
+  const pesan = document.getElementById("pesan").value;
 
-  // Auto-clear form setelah dikirim
+  const text = `Halo Syafa Sofa,%0A
+Saya ingin memesan layanan berikut:%0A
+Nama: ${nama}%0A
+Telepon: ${telepon}%0A
+Alamat: ${alamat}%0A
+Layanan: ${layanan}%0A
+Pesan: ${pesan}%0A%0A
+Terima kasih.`;
+
+  const waUrl = `https://wa.me/6281328901485?text=${text}`;
+  window.open(waUrl, "_blank");
+
   this.reset();
-
 });
 </script>
+
+<!-- ===== Tambahkan di bawah sebelum </body> ===== -->
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+  AOS.init();
+</script>
+
+<!-- Efek Hover Tombol -->
+<style>
+.hover-scale {
+  transition: all 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.03);
+  background-color: #1ebe57 !important;
+}
+</style>
+
 
 
 
