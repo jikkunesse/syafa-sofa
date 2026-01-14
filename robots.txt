@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jikkunesse.github.io/syafa-sofa/sitemap.xml
+Sitemap: https://syafasofa.my.id/sitemap.xml
